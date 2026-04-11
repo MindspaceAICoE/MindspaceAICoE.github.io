@@ -10,17 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --color-bg: #18181a;
-      --color-bg-alt: #1e1e21;
-      --color-surface: #232227;
-      --color-surface-hover: #2e2e33;
-      --color-border: rgba(255, 255, 255, 0.1);
-      --color-text: #e8e8e8;
-      --color-text-muted: #c7c7c7;
-      --color-primary: #0e90f2;
-      --color-primary-light: #2397f8;
-      --color-accent: #ffc959;
-      --color-accent-light: #ffd98a;
+      --color-bg: #0a1929;
+      --color-bg-alt: #0d1f33;
+      --color-surface: #122842;
+      --color-surface-hover: #173354;
+      --color-border: rgba(255, 255, 255, 0.08);
+      --color-text: #ffffff;
+      --color-text-muted: rgba(255, 255, 255, 0.65);
+      --color-primary: #2397f8;
+      --color-primary-light: #5bb5ff;
+      --color-accent: #f4a261;
+      --color-accent-light: #f7b885;
       --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --radius: 12px;
       --radius-sm: 8px;
@@ -54,8 +54,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(14, 144, 242, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(255, 201, 89, 0.06) 0%, transparent 50%);
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(35, 151, 248, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(244, 162, 97, 0.06) 0%, transparent 50%);
       pointer-events: none;
     }
     .hero-content { position: relative; z-index: 1; }
@@ -68,8 +68,8 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--color-accent);
-      background: rgba(255, 201, 89, 0.1);
-      border: 1px solid rgba(255, 201, 89, 0.2);
+      background: rgba(244, 162, 97, 0.1);
+      border: 1px solid rgba(244, 162, 97, 0.2);
       margin-bottom: 24px;
     }
     .hero h1 {
@@ -111,7 +111,7 @@
     .product-card:hover {
       border-color: var(--color-primary);
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(14, 144, 242, 0.1);
+      box-shadow: 0 12px 40px rgba(35, 151, 248, 0.1);
     }
     .product-icon { font-size: 2rem; margin-bottom: 16px; }
     .product-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; }
@@ -162,7 +162,7 @@
       background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
       color: #fff;
     }
-    .link-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(14, 144, 242, 0.4); }
+    .link-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(35, 151, 248, 0.4); }
     .link-btn-outline {
       background: transparent;
       color: var(--color-text);
@@ -198,14 +198,12 @@
 
       <div class="products">
         <a href="https://mindspaceaicoe.github.io/situational-ai/" class="product-card">
-          <img src="assets/situational-ai.jpeg" alt="Situational AI" style="width: 160px; margin-bottom: 12px; border-radius: 8px;">
-          <h3>Situational AI</h3>
+          <img src="assets/situational-ai.jpeg" alt="Situational AI — Our cognitive model for AI agents" style="width: 200px; margin-bottom: 16px; border-radius: 8px;">
           <p>Our cognitive model for AI agents — a framework that mimics human situational awareness and contextual reasoning.</p>
           <span class="product-link">Explore Situational AI &rarr;</span>
         </a>
         <a href="https://botswork.ai" class="product-card">
-          <img src="assets/botswork.png" alt="BotsWork.ai" style="width: 160px; margin-bottom: 12px;">
-          <h3>BotsWork.ai</h3>
+          <img src="assets/botswork.png" alt="BotsWork.ai — Platform for building situation-aware AI agents" style="width: 200px; margin-bottom: 16px;">
           <p>Our platform for building and deploying situation-aware AI agents — from concept to production.</p>
           <span class="product-link">Visit BotsWork.ai &rarr;</span>
         </a>
